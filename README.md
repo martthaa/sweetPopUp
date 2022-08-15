@@ -1,2 +1,2 @@
 # sweetPopUp
-(Demo)[https://martthaa.github.io/sweetPopUp/]
+[Demo](https://martthaa.github.io/sweetPopUp/)
