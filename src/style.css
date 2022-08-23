@@ -43,7 +43,6 @@ input[type="checkbox"] {
   flex-direction: column-reverse;
   align-items: center;
   justify-content: space-around;
-  font-family: "Poppins", sans-serif;
 }
 
 .element {
@@ -211,6 +210,19 @@ a:hover {
   .tooltip:nth-child(3)::after {
     top: 70px;
     content: "click to get in touch with me via email";
+  }
+
+  body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
   }
 
   
