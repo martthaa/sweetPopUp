@@ -22,20 +22,20 @@ body {
     justify-content: flex-end;
 }
 
-a,a:visited {
+.popup_link,.popup_link:visited {
   text-decoration: none;
   color: rgb(139,69,19);
 }
 
-label {
+/* label {
   cursor: pointer;
-}
+} */
 
 input[type="checkbox"] {
   appearance: none;
 }
 
-.boxOfNavigationButtons{
+.box-navigation-buttons{
   top: 40px;
   right: 40px;
   gap: 4em;
@@ -83,12 +83,6 @@ input[type="checkbox"] {
   visibility: visible;
 }
 
-.avatar {
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-}
-
 .popup_list {
   display: flex;
   flex-wrap: wrap;
@@ -108,6 +102,7 @@ input[type="checkbox"] {
   font-family: 'Brush Script MT', cursive;
   padding-top: 40px;
   font-size: 40px;
+  text-decoration: none;
 }
 
 .more-item-menu {
@@ -116,7 +111,16 @@ input[type="checkbox"] {
   position: absolute;
 }
 
-li.popup_item {
+/* li.popup_item {
+  width: 9em;
+  height: 9.5em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+} */
+
+.popup_item {
   width: 9em;
   height: 9.5em;
   display: inline-flex;
@@ -132,14 +136,15 @@ li.popup_item {
   align-items: center;
   gap: 10px;
   font-family: 'Brush Script MT', cursive;
-
   border: 1px solid transparent;
   border-radius: 5px;
 }
 
+
 .innerText{
     font-size: 30px;
 }
+
 
 .popup_more:checked ~ .more-item-menu {
   opacity: 1;
@@ -150,12 +155,18 @@ li.popup_item {
   box-shadow: 0px;
 }
 
-label.popup_btn, a.link_more{
+/* label.popup_btn, a.link_more{
     color: black ;
+} */
+.popup_btn, .link_more{
+  color: black ;
 }
 
-label.popup_btn:hover, a.link_more:hover{
+/* label.popup_btn:hover, a.link_more:hover{
     color: grey;
+} */
+.popup_btn:hover, .link_more:hover{
+  color: grey;
 }
 
 .popup_more:checked ~ .popup_btn {
@@ -163,7 +174,10 @@ label.popup_btn:hover, a.link_more:hover{
   visibility: hidden;
 }
 
-a:hover {
+/* a:hover {
+  color: gray;
+} */
+.popup_link:hover{
   color: gray;
 }
 
@@ -178,13 +192,21 @@ a:hover {
     border-radius: 5px;  
 }
 
-.element-item:focus-within {
-  outline: none;
-}
 
-.icon-chat img, .check img, .icon-recipes img{
+/* .icon-chat img, .hamburger img, .icon-recipes img{
     width: 40px;
     height: 40px;
+} */
+
+.button-icon{
+  width: 40px;
+  height: 40px;
+}
+
+.avatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
 }
 
   @media screen and (max-width:540px) {
@@ -193,8 +215,11 @@ a:hover {
       top: 350%;
       padding: 30px;
     }
-    .boxOfNavigationButtons{
+    .box-navigation-buttons{
       flex-direction: row;
+    }
+    .popup_item{
+      margin-top: 10px;
     }
   }
 
