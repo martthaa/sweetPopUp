@@ -22,14 +22,10 @@ body {
     justify-content: flex-end;
 }
 
-.popup_link,.popup_link:visited {
+.popup_link, .popup_btn, .popup_link:visited {
   text-decoration: none;
   color: rgb(139,69,19);
 }
-
-/* label {
-  cursor: pointer;
-} */
 
 input[type="checkbox"] {
   appearance: none;
@@ -40,11 +36,11 @@ input[type="checkbox"] {
   right: 40px;
   gap: 4em;
   display: inline-flex;
-  flex-direction: column-reverse;
+  /* flex-direction: column-reverse; */
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-
 
 .list-item {
   display: flex;
@@ -100,25 +96,18 @@ input[type="checkbox"] {
   width: 100%;
   cursor: pointer;
   font-family: 'Brush Script MT', cursive;
-  padding-top: 40px;
+  margin-top: 15px;
+  padding: 25px 0;
   font-size: 40px;
   text-decoration: none;
 }
+
 
 .more-item-menu {
   visibility: hidden;
   opacity: 0;
   position: absolute;
 }
-
-/* li.popup_item {
-  width: 9em;
-  height: 9.5em;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-} */
 
 .popup_item {
   width: 9em;
@@ -155,16 +144,10 @@ input[type="checkbox"] {
   box-shadow: 0px;
 }
 
-/* label.popup_btn, a.link_more{
-    color: black ;
-} */
 .popup_btn, .link_more{
   color: black ;
 }
 
-/* label.popup_btn:hover, a.link_more:hover{
-    color: grey;
-} */
 .popup_btn:hover, .link_more:hover{
   color: grey;
 }
@@ -174,9 +157,6 @@ input[type="checkbox"] {
   visibility: hidden;
 }
 
-/* a:hover {
-  color: gray;
-} */
 .popup_link:hover{
   color: gray;
 }
@@ -187,26 +167,24 @@ input[type="checkbox"] {
 
 .list-item:hover, 
 .list-item:focus-within   {
-    border: 1px solid rgb(255, 255, 255);
-    box-shadow: 0 0 10px rgb(131, 121, 106);
+    box-shadow: 0  0 10px rgb(131, 121, 106);
     border-radius: 5px;  
 }
-
-
-/* .icon-chat img, .hamburger img, .icon-recipes img{
-    width: 40px;
-    height: 40px;
-} */
+/*1 не стрибає*/
+.list-item {
+  border: 1px solid transparent;
+}
 
 .button-icon{
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 
 .avatar {
   width: 65px;
   height: 65px;
-  border-radius: 50%;
+  border-radius: 50%; /*2 курсор*/
 }
 
   @media screen and (max-width:540px) {
@@ -216,7 +194,7 @@ input[type="checkbox"] {
       padding: 30px;
     }
     .box-navigation-buttons{
-      flex-direction: row;
+      flex-direction: row-reverse;
     }
     .popup_item{
       margin-top: 10px;
