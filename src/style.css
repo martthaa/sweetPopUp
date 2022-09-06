@@ -11,7 +11,7 @@ body {
   text-align: center;
   color: black;
   background-image: url(./img/bg.jpg);
-  background-size: cover;
+  /* background-size: cover; */
   font-family: 'Poppins', sans-serif;
   background-repeat: no-repeat;
   background-position: 20% 20%;
@@ -49,8 +49,8 @@ input[type="checkbox"] {
 }
 
 .icon{
-  width: 8em;
-  height: 8em;
+  width: 140px;
+  height: 140px;
   display: block;
   margin: 0 auto;
   border-radius: 50%;
@@ -102,7 +102,6 @@ input[type="checkbox"] {
   text-decoration: none;
 }
 
-
 .more-item-menu {
   visibility: hidden;
   opacity: 0;
@@ -110,8 +109,8 @@ input[type="checkbox"] {
 }
 
 .popup_item {
-  width: 9em;
-  height: 9.5em;
+  width: 120px;
+  height: 180px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -127,13 +126,8 @@ input[type="checkbox"] {
   font-family: 'Brush Script MT', cursive;
   border: 1px solid transparent;
   border-radius: 5px;
+  font-size: 30px;
 }
-
-
-.innerText{
-    font-size: 30px;
-}
-
 
 .popup_more:checked ~ .more-item-menu {
   opacity: 1;
@@ -170,7 +164,7 @@ input[type="checkbox"] {
     box-shadow: 0  0 10px rgb(131, 121, 106);
     border-radius: 5px;  
 }
-/*1 не стрибає*/
+
 .list-item {
   border: 1px solid transparent;
 }
@@ -184,13 +178,13 @@ input[type="checkbox"] {
 .avatar {
   width: 65px;
   height: 65px;
-  border-radius: 50%; /*2 курсор*/
+  border-radius: 50%;
 }
-
+/*з % на px*/
   @media screen and (max-width:540px) {
     .popup{
-      right: -240%;
-      top: 350%;
+      right: -80px;
+      top: 100px;
       padding: 30px;
     }
     .box-navigation-buttons{
